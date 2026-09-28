@@ -14,6 +14,26 @@
 		<meta name="description" content="CETCam (CVPR 2026 Findings): camera-controllable video generation via consistent and extensible tokenization, without camera annotations." />
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<style>
+			#intro h1, #intro h2 { text-shadow: 0 2px 14px rgba(0,0,0,.85), 0 0 2px rgba(0,0,0,.9); }
+			#intro .byline {
+				display: inline-block; max-width: 62rem; margin: 0 auto 1.6rem;
+				padding: 1.3rem 2rem 1.1rem; border-radius: 10px;
+				background: rgba(10, 12, 16, .68); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+				box-shadow: 0 8px 30px rgba(0,0,0,.35); border: 1px solid rgba(255,255,255,.14);
+				text-shadow: none;
+			}
+			#intro .byline p { margin: 0; }
+			#intro .byline-authors { font-size: 1.15rem; font-weight: 600; line-height: 2; letter-spacing: .01em; color: #fff; }
+			#intro .byline-authors span, #intro .byline-authors a { display: inline-block; margin: 0 .55rem; white-space: nowrap; }
+			#intro .byline-authors a { color: #fff; border-bottom: 1px solid rgba(255,255,255,.55); }
+			#intro .byline-authors a:hover { color: #ffd479; border-bottom-color: #ffd479; }
+			#intro .byline-authors sup, #intro .byline-affil sup { font-size: .68em; margin-left: 1px; opacity: .85; }
+			#intro .byline-affil { font-size: .95rem; line-height: 1.9; color: rgba(255,255,255,.88); margin-top: .35rem; }
+			#intro .byline-affil span { display: inline-block; margin: 0 .6rem; white-space: nowrap; }
+			#intro .byline-venue { margin-top: .8rem; font-size: 1.05rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #ffd479; }
+			@media (max-width: 736px) { #intro .byline { padding: 1rem 1.1rem; } #intro .byline-authors { font-size: 1rem; } #intro .byline-affil { font-size: .85rem; } }
+		</style>
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -101,23 +121,25 @@
 							Camera-Controllable Video Generation<br />
 							via Consistent and Extensible Tokenization
 						</h2>
-						<p style="font-size:1.05rem; line-height:1.9; margin-bottom:0.6rem;">
-							<a href="https://sjtuytc.github.io/">Zelin Zhao</a><sup>1</sup>&ensp;
-							Xinyu Gong<sup>2</sup>&ensp;
-							Bangya Liu<sup>3</sup>&ensp;
-							Ziyang Song<sup>4</sup>&ensp;
-							Jun Zhang<sup>2</sup>&ensp;
-							Suhui Wu<sup>2</sup>&ensp;
-							<a href="https://yongxin.ae.gatech.edu/">Yongxin Chen</a><sup>1</sup>&ensp;
-							Hao Zhang<sup>2</sup>
-						</p>
-						<p style="font-size:0.9rem; line-height:1.8; margin-bottom:0.8rem;">
-							<sup>1</sup>Georgia Institute of Technology&ensp;
-							<sup>2</sup>ByteDance&ensp;
-							<sup>3</sup>University of Wisconsin&ndash;Madison&ensp;
-							<sup>4</sup>The Hong Kong Polytechnic University
-						</p>
-						<p style="font-size:1.25rem; letter-spacing:0.08em; margin-bottom:1.2rem;"><b>CVPR 2026 Findings</b></p>
+						<div class="byline">
+							<p class="byline-authors">
+								<a href="https://sjtuytc.github.io/">Zelin Zhao</a><sup>1</sup>
+								<span>Xinyu Gong<sup>2</sup></span>
+								<span>Bangya Liu<sup>3</sup></span>
+								<span>Ziyang Song<sup>4</sup></span>
+								<span>Jun Zhang<sup>2</sup></span>
+								<span>Suhui Wu<sup>2</sup></span>
+								<a href="https://yongxin.ae.gatech.edu/">Yongxin Chen</a><sup>1</sup>
+								<span>Hao Zhang<sup>2</sup></span>
+							</p>
+							<p class="byline-affil">
+								<span><sup>1</sup>Georgia Institute of Technology</span>
+								<span><sup>2</sup>ByteDance</span>
+								<span><sup>3</sup>University of Wisconsin&ndash;Madison</span>
+								<span><sup>4</sup>The Hong Kong Polytechnic University</span>
+							</p>
+							<p class="byline-venue">CVPR 2026 Findings</p>
+						</div>
 						<ul class="actions" style="margin-bottom:1rem;">
 							<li><a href="https://arxiv.org/abs/2512.19020" class="button primary icon solid fa-file-alt" target="_blank" rel="noopener">arXiv</a></li>
 							<li><a href="https://arxiv.org/pdf/2512.19020" class="button icon solid fa-file-pdf" target="_blank" rel="noopener">Paper</a></li>
