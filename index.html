@@ -10,7 +10,8 @@
 
 			gtag('config', 'G-L86Q9J5K4M');
 		</script>
-		<title>CETCam</title>
+		<title>CETCam: Camera-Controllable Video Generation (CVPR 2026)</title>
+		<meta name="description" content="CETCam (CVPR 2026): camera-controllable video generation via consistent and extensible tokenization, without camera annotations." />
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -100,9 +101,28 @@
 							Camera-Controllable Video Generation<br />
 							via Consistent and Extensible Tokenization
 						</h2>
-						<p style="font-size:1.2rem;"><i>Anonymous Submission</i></p>
-						<header class="major">
-						</header>
+						<p style="font-size:1.05rem; line-height:1.9; margin-bottom:0.6rem;">
+							<a href="https://sjtuytc.github.io/">Zelin Zhao</a><sup>1</sup>&ensp;
+							Xinyu Gong<sup>2</sup>&ensp;
+							Bangya Liu<sup>3</sup>&ensp;
+							Ziyang Song<sup>4</sup>&ensp;
+							Jun Zhang<sup>2</sup>&ensp;
+							Suhui Wu<sup>2</sup>&ensp;
+							<a href="https://yongxin.ae.gatech.edu/">Yongxin Chen</a><sup>1</sup>&ensp;
+							Hao Zhang<sup>2</sup>
+						</p>
+						<p style="font-size:0.9rem; line-height:1.8; margin-bottom:0.8rem;">
+							<sup>1</sup>Georgia Institute of Technology&ensp;
+							<sup>2</sup>ByteDance&ensp;
+							<sup>3</sup>University of Wisconsin&ndash;Madison&ensp;
+							<sup>4</sup>The Hong Kong Polytechnic University
+						</p>
+						<p style="font-size:1.25rem; letter-spacing:0.08em; margin-bottom:1.2rem;"><b>CVPR 2026</b></p>
+						<ul class="actions" style="margin-bottom:1rem;">
+							<li><a href="https://arxiv.org/abs/2512.19020" class="button primary icon solid fa-file-alt" target="_blank" rel="noopener">arXiv</a></li>
+							<li><a href="https://arxiv.org/pdf/2512.19020" class="button icon solid fa-file-pdf" target="_blank" rel="noopener">Paper</a></li>
+							<li><a href="#bibtex" class="button icon solid fa-quote-right scrolly">BibTeX</a></li>
+						</ul>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
@@ -113,9 +133,13 @@
 					<div id="main">
 							<article class="post featured">
 								<header class="minor">
-									<p>Videos on this page are subsampled and rescaled to meet the supplementary file size limits. </br> Videos on our further online project page will have higher quality. </p>
 									<p>TL;DR: A camera-controllable video generation framework that requires no camera annotations, using geometry-aware tokenization to achieve state-of-the-art consistency and extensibility.</p>
 								</header>
+								<h2> Abstract </h2>
+								<p style="text-align:left; max-width:60rem; margin:0 auto 2rem;">
+									Achieving precise camera control in video generation remains challenging, as it often relies on camera pose annotations that are difficult to scale to large, dynamic datasets and are frequently inconsistent with depth estimation, leading to train&ndash;test discrepancies. We introduce CETCam, a camera-controllable video generation framework that eliminates the need for camera annotations through consistent and extensible tokenization. CETCam incorporates recent advances in geometry foundation models (e.g., VGGT) to estimate depth and camera parameters, converting them into unified, geometry-aware tokens that are seamlessly integrated into a pretrained video diffusion backbone via lightweight context blocks. Trained in two progressive phases, CETCam learns robust camera controllability from diverse raw videos and refines fine-grained visual quality on curated high-fidelity data. Extensive experiments across multiple benchmarks demonstrate state-of-the-art geometric consistency, temporal stability, and visual realism. Moreover, CETCam exhibits strong adaptability to additional control modalities (e.g., inpainting or layout), highlighting its flexibility beyond camera control.
+								</p>
+								<header class="major"></header>
 								<h2> Camera-controlled Video Generation </h2>
 								<div id="video-block">
 									<video class="lazy" autoplay muted loop id="basic_0">
@@ -177,7 +201,7 @@
 								</div>
 								<!-- <br /> -->
 								<b>CETCam framework synthesizes dynamic, geometry-consistent scenes across diverse domains. 
-									<br /> Camera trajectories are described in nature languages for better understanding, </br>while the CETCam model takes raw camera trajectories as input. </b>
+									<br /> Camera trajectories are described in natural language for readability, </br>while the CETCam model takes raw camera trajectories as input. </b>
 									<header class="major">
 									</header>
 									<h2> Diverse Scenes Results </h2>
@@ -366,11 +390,11 @@
 										Your browser does not support the video tag.
 									</video>
 								</div>
-								<b>From left to right, we show camera trajectory, source image, VACE control input, and the generated video. </br> CETCam can perform various control tasks while achiving precise camera control.</b>
+								<b>From left to right, we show camera trajectory, source image, VACE control input, and the generated video. </br> CETCam can perform various control tasks while achieving precise camera control.</b>
 								<!-- END OF D -->
 								<header class="major">
 								</header>
-								<h2> Comparations between Uni3C and ours </h2>
+								<h2> Comparisons between Uni3C and Ours </h2>
 								<div id="video-mt">
 									<video class="lazy" autoplay muted loop id="m_o">
 										<source data-src="CETCam_videos/comparisons/00034_03896db4_render.mp4" type="video/mp4">
@@ -563,12 +587,21 @@
 								<br />
 								<header class="major">
 								</header>
+								<h2 id="bibtex"> BibTeX </h2>
+								<pre style="text-align:left; max-width:60rem; margin:0 auto 2rem; white-space:pre-wrap;"><code>@inproceedings{zhao2026cetcam,
+  title     = {{CETCam}: Camera-Controllable Video Generation via Consistent and Extensible Tokenization},
+  author    = {Zhao, Zelin and Gong, Xinyu and Liu, Bangya and Song, Ziyang and Zhang, Jun and Wu, Suhui and Chen, Yongxin and Zhang, Hao},
+  booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year      = {2026}
+}</code></pre>
+								<header class="major">
+								</header>
 								<!-- <p style="text-align: center;"><i>Webpage Source: </i> <a href="https://arxiv.org/abs/2406.10126" target="_blank">Camtrol</a></p> -->
 								<!-- <a href="#" class="icon fas fa-file-pdf"></a> -->
 							</article>
 					</div>
 					<div id="copyright">
-						<ul><li>&copy; CETCam</li></ul>
+						<ul><li>&copy; 2026 CETCam authors</li><li><a href="https://arxiv.org/abs/2512.19020">arXiv:2512.19020</a></li></ul>
 					</div>
 
 			</div>
